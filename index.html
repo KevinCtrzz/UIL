@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIL News Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UIL Current Events News Archive</h1>
+        <div class="exam-dates">
+            <h2>2024-2025 UIL Exam Schedule</h2>
+            <ul>
+                <li>🏆 Invitational A: August - September 2024</li>
+                <li>🏆 Invitational B: October - November 2024</li>
+                <li>🏆 District: December 2024 - January 2025</li>
+                <li>🏆 Region: February 2025</li>
+                <li>🏆 State: April 2025</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="filters">
+            <select id="monthFilter">
+                <option value="all">All Months</option>
+                <option value="August 2024">August 2024</option>
+                <option value="September 2024">September 2024</option>
+                <option value="October 2024">October 2024</option>
+                <option value="November 2024">November 2024</option>
+                <option value="December 2024">December 2024</option>
+                <option value="January 2025">January 2025</option>
+            </select>
+        </div>
+
+        <div id="tweets-container"></div>
+    </main>
+
+    <script type="module" src="fetch.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
